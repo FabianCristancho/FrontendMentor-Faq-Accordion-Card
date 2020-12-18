@@ -1,0 +1,244 @@
+body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+    z-index: 1;
+}
+
+.extra {
+    width: 70vw;
+    height: 35vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    width: 70vw;
+    height: 35vw;
+    position: absolute;
+    border-radius: 5vh;
+    top: 50%;
+    left: 50%;
+    margin: 0%;
+    padding: 0%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-areas: "image faq";
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.image {
+    grid-area: image;
+    z-index: 2;
+    position: absolute;
+}
+
+.woman-desktop {
+    position: absolute;
+    width: 30vw;
+    z-index: -1;
+    -ms-transform: translate(-18%, 28%);
+    transform: translate(-18%, 28%);
+}
+
+.box-desktop {
+    width: 12vw;
+    position: absolute;
+    z-index: 6;
+    -ms-transform: translate(-50%, 133%);
+    transform: translate(-50%, 133%);
+}
+
+.patter-desktop{
+    position: fixed;
+    width: 65vw;
+    -ms-transform: translate(-62%, -30%);
+    transform: translate(-62%, -30%);
+    z-index: -2;
+    margin: 0%;
+    padding: 0%;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+.faq {
+    grid-area: faq;
+    position: absolute;
+    padding: 3vw 0vw 3vw 0vw; 
+    width: 100%;
+}
+
+.title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 2vw;
+    position: relative;
+}
+
+.section {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 4%;
+}
+
+.icon-arrow {
+    position: relative;
+    padding-right: 20%;
+    float: right;
+    cursor: pointer;
+}
+
+.icon-arrow:focus {
+    outline: none;
+}
+
+.icon-arrow:focus ~ .answer {
+    display: block;
+}
+
+.question {
+    text-align: left;
+    font-size: 1.2vw;
+    display: inline;
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+}
+
+
+.answer {
+    padding-right: 20%;
+    font-size: 1vw;
+    color: hsl(240, 6%, 50%);
+    font-weight: 300;
+}
+
+hr {
+    margin-top: 4%;
+    margin-right: 18%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1%;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* Pantallas de tamaño máximo de 860 píxeles */
+@media screen and (max-width: 860px){
+    .extra {
+        height: 50vw;
+    }
+
+    .card {
+        height: 50vw;
+        overflow: visible;
+    }
+
+    .title {
+        padding-top: 3vw;
+    }
+}
+
+/* Pantallas de tamaño máximo de 420 píxeles */
+@media screen and (max-width: 420px){
+    .card {
+        display: grid;
+        grid-template-areas: "faq";
+        width: 85vw;
+        height: 70vh;
+        -ms-transform: translate(-50%, -40%);
+        transform: translate(-50%, -40%);
+        padding-left: 5vw;
+        padding-top: 1250w;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .image-mobile {
+        display: block;
+        position: absolute;
+    }
+
+    .woman-mobile {
+        position: absolute;
+        -ms-transform: translate(20%, -55%);
+        transform: translate(20%, -55%);
+        width: 60vw;
+    }
+
+    .pattern-mobile {
+        -ms-transform: translate(30%, 0%);
+        transform: translate(30%, 0%);
+        position: absolute;
+        width: 55vw;
+    }
+
+    .faq {
+        height: 70vh;
+    }
+
+    .title {
+        padding-top: 18vw;
+        text-align: center;
+        font-weight: 700;
+        font-size: 7vw;
+    }
+
+    .question {
+        font-size: 3vw;
+        position: relative;
+    }
+
+    .icon-arrow{
+        padding-right: 10%;
+    }
+
+    .answer {
+        font-size: 2.5vw;
+    }
+
+    hr {
+        margin-right: 10%;
+    }
+}
