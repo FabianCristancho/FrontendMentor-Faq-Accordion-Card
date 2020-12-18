@@ -62,4 +62,6 @@ I complete the challenge successfully!
 ## My Mobile Design
 ![Design preview for the FAQ Accordion Card coding challenge](./design/my-mobile-design.jpg)
 
+Enjoy my solution here: https://www.frontendmentor.io/solutions/i-worked-with-pure-css-and-html-l_p3QpZ_u
+
 Thanks for watching, and please, follow me and share my repos 🙂😃!
