@@ -28,8 +28,8 @@ body {
 .card {
     background-color: white;
     text-align: center;
-    width: 70vw;
-    height: 35vw;
+    width: 65vw;
+    height: 35.5vw;
     position: absolute;
     border-radius: 5vh;
     top: 50%;
@@ -62,8 +62,8 @@ body {
     width: 12vw;
     position: absolute;
     z-index: 6;
-    -ms-transform: translate(-50%, 133%);
-    transform: translate(-50%, 133%);
+    -ms-transform: translate(-30%, 133%);
+    transform: translate(-30%, 133%);
 }
 
 .patter-desktop{
@@ -114,6 +114,9 @@ body {
 
 .icon-arrow:focus {
     outline: none;
+    margin-right: 20%;
+    float: right;
+    transform: rotate(180deg);
 }
 
 .icon-arrow:focus ~ .answer {
@@ -126,14 +129,23 @@ body {
     display: inline;
     font-weight: 700;
     color: hsl(238, 29%, 16%);
+    cursor: pointer;
 }
 
+.question:focus {
+    outline: none;
+}
+
+.question:focus ~ .answer {
+    display: block;
+}
 
 .answer {
     padding-right: 20%;
     font-size: 1vw;
     color: hsl(240, 6%, 50%);
     font-weight: 300;
+    text-align: justify;
 }
 
 hr {
@@ -226,7 +238,7 @@ footer a:hover{
     }
 
     .question {
-        font-size: 3vw;
+        font-size: 4vw;
         position: relative;
     }
 
@@ -234,8 +246,13 @@ footer a:hover{
         padding-right: 10%;
     }
 
+    .icon-arrow:focus{
+        margin-right: 10%;
+    }
+
     .answer {
-        font-size: 2.5vw;
+        font-size: 2.8vw;
+        text-align: justify;
     }
 
     hr {
